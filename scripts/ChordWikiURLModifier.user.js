@@ -15,6 +15,9 @@
 /**
 Chordwiki の曲ページを開いたタイミングで、自動的に臨時記号 flat を選んでリロードします。
 (Chordwiki Plus などの) Chordwiki の曲ページをいじるような拡張やスクリプトとは衝突するかもです。
+
+やめ方
+  ブラウザ拡張の Tampermonkey を開いて、'ChordWiki accidental url modifier' を無効、またはゴミ箱する。
 **/
 
 (function() {
