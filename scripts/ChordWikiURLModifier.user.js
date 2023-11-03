@@ -15,9 +15,6 @@
 /**
 Chordwiki の曲ページを開いたタイミングで、自動的に臨時記号 flat を選んでリロードします。
 (Chordwiki Plus などの) Chordwiki の曲ページをいじるような拡張やスクリプトとは衝突するかもです。
-
-臨時記号に # を好む方は、下の your_preferred_symbol, your_weak_symbol を入れ替えてください。
-
 **/
 
 (function() {
@@ -30,8 +27,9 @@ Chordwiki の曲ページを開いたタイミングで、自動的に臨時記�
 
     let url = new URL(window.location.href);
     if(url.searchParams.get('symbol') != your_weak_symbol && url.searchParams.get('symbol') != your_preferred_symbol){
-        url.searchParams.set('symbol', your_preferred_symbol);
-        location.href = url;
-        console.log("accidental: " + your_preferred_symbol);
+        // url.searchParams.set('symbol', your_preferred_symbol);
+        // location.href = url;
+        document.forms[0].elements.symbol.selectedIndex = 2;  // 0 == sharp
+        document.forms[0].submit();
     }
 })();
