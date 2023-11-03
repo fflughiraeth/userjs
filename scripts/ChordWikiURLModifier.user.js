@@ -7,6 +7,8 @@
 // @match        https://ja.chordwiki.org/wiki/*
 // @match        https://ja.chordwiki.org/wiki.cgi*
 // @grant        none
+// @updateURL    https://github.com/fflughiraeth/userjs/raw/main/scripts/ChordWikiURLModifier.user.js
+// @downloadURL  https://github.com/fflughiraeth/userjs/raw/main/scripts/ChordWikiURLModifier.user.js
 // @noframes
 // ==/UserScript==
 
