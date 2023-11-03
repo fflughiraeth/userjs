@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ChordWiki accidental url modifier
 // @namespace    https://github.com/fflughiraeth/userjs/
-// @version      0.1
+// @version      0.1.1
 // @description  Modify ChordWiki URLs as needed
 // @author       fflughiraeth
 // @match        https://ja.chordwiki.org/wiki/*
@@ -11,6 +11,13 @@
 // @downloadURL  https://github.com/fflughiraeth/userjs/raw/main/scripts/ChordWikiURLModifier.user.js
 // @noframes
 // ==/UserScript==
+
+/***
+Chordwiki の曲ページを開いたとき、自動的に臨時記号 flat を選んでからリロードします。
+Chordwiki Plus など、Chordwiki の曲ページをいじるような拡張やスクリプトとは衝突するかもです。
+
+シャープのほうを好む方は、下の your_preferred_symbol, your_weak_symbol をいれかえてください
+***/ 
 
 (function() {
     'use strict';
