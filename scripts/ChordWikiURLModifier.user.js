@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ChordWiki accidental url modifier
 // @namespace    https://github.com/fflughiraeth/userjs/
-// @version      0.2.0
+// @version      0.2.1
 // @description  Modify ChordWiki URLs as needed
 // @author       fflughiraeth
 // @match        https://ja.chordwiki.org/wiki/*
