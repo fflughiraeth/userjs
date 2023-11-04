@@ -34,10 +34,11 @@ Chordwiki の曲ページを開いたタイミングで、自動的に臨時記�
         // location.href = url;
         if(your_preferred_symbol == 'flat'){
             document.forms[0].elements.symbol.selectedIndex = 2;
+            document.forms[0].submit();
         }
         else if(your_preferred_symbol == 'sharp'){
             document.forms[0].elements.symbol.selectedIndex = 0;
+            document.forms[0].submit();
         }
-        document.forms[0].submit();
     }
 })();
