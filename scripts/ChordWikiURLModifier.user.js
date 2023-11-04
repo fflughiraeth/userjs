@@ -32,7 +32,12 @@ Chordwiki の曲ページを開いたタイミングで、自動的に臨時記�
     if(url.searchParams.get('symbol') != your_weak_symbol && url.searchParams.get('symbol') != your_preferred_symbol){
         // url.searchParams.set('symbol', your_preferred_symbol);
         // location.href = url;
-        document.forms[0].elements.symbol.selectedIndex = 2;  // 0 == sharp
+        if(your_preferred_symbol == 'flat'){
+            document.forms[0].elements.symbol.selectedIndex = 2;
+        }
+        else if(your_preferred_symbol == 'sharp'){
+            document.forms[0].elements.symbol.selectedIndex = 0;
+        }
         document.forms[0].submit();
     }
 })();
