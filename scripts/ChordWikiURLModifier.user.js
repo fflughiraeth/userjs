@@ -29,9 +29,8 @@ Chordwiki の曲ページを開いたタイミングで、自動的に臨時記�
     let your_weak_symbol = 'sharp';
 
     let url = new URL(window.location.href);
-    if(url.searchParams.get('symbol') != your_weak_symbol && url.searchParams.get('symbol') != your_preferred_symbol){
-        // url.searchParams.set('symbol', your_preferred_symbol);
-        // location.href = url;
+    if(url.searchParams.get('symbol') != your_weak_symbol && url.searchParams.get('symbol') != your_preferred_symbol)
+    {
         if(your_preferred_symbol == 'flat'){
             document.forms[0].elements.symbol.selectedIndex = 2;
             document.forms[0].submit();
